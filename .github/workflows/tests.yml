@@ -62,7 +62,7 @@ jobs:
       - name: Run tests
         run: yarn run -s test:unit --coverage
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./coverage
@@ -91,7 +91,7 @@ jobs:
       - name: Run test
         run: yarn run -s test:front --coverage
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           directory: ./coverage
